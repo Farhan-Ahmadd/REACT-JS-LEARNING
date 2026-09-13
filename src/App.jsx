@@ -1,34 +1,34 @@
 import React from "react";
 import image from "./assets/image.png";
 
-// export const App = () => {
-//   return (
-//     <div>
-//       <h1>Netflix Series</h1>
+export const App = () => {
+  return (
+    <div>
+      <h1>Netflix Series</h1>
 
-//       <NetflixSeries />
-//       <NetflixSeries />
-//       <NetflixSeries />
-//     </div>
-//   );
-// };
+      <NetflixSeries />
+      <NetflixSeries />
+      <NetflixSeries />
+    </div>
+  );
+};
 
-// const NetflixSeries = () => {
-//   return (
-//     <div>
-//       <img src={image} height="200px" width="200px" />
+const NetflixSeries = () => {
+  return (
+    <div>
+      <img src={image} height="200px" width="200px" />
 
-//       <h2>Money Heist</h2>
-//       <h2>Rating: 4.5/5</h2>
+      <h2>Money Heist</h2>
+      <h2>Rating: 4.5/5</h2>
 
-//       <p>
-//         Money Heist is a Spanish heist crime drama television series created
-//         by Álex Pina. The series traces two long-prepared heists led by
-//         the Professor (Álvaro Morte).
-//       </p>
-//     </div>
-//   );
-// };
+      <p>
+        Money Heist is a Spanish heist crime drama television series created
+        by Álex Pina. The series traces two long-prepared heists led by
+        the Professor (Álvaro Morte).
+      </p>
+    </div>
+  );
+};
 // export const App = () =>{
 //   return(
 //     <div>
