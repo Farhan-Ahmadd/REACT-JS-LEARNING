@@ -1,34 +1,36 @@
-import React from "react";
+import {fragment} from "react";
 import image from "./assets/image.png";
 
-export const App = () => {
-  return (
-    <div>
-      <h1>Netflix Series</h1>
+// export const App = () => {
+//   return (
+//     <div>
+//       <h1>Netflix Series</h1>
 
-      <NetflixSeries />
-      <NetflixSeries />
-      <NetflixSeries />
-    </div>
-  );
-};
+//       <NetflixSeries />
+//       <NetflixSeries />
+//       <NetflixSeries />
+//     </div>
+//   );
+// };
 
-const NetflixSeries = () => {
-  return (
-    <div>
-      <img src={image} height="200px" width="200px" />
+// const NetflixSeries = () => {
+//   const name = "Money Heist";
+//   const rating = "4.5/5";
+//   return (
+//     <div>
+//       <img src={image} height="200px" width="200px" />
 
-      <h2>Money Heist</h2>
-      <h2>Rating: 4.5/5</h2>
+//       <h2>name : {name}</h2>
+//       <h2>Rating: {rating}</h2>
 
-      <p>
-        Money Heist is a Spanish heist crime drama television series created
-        by Álex Pina. The series traces two long-prepared heists led by
-        the Professor (Álvaro Morte).
-      </p>
-    </div>
-  );
-};
+//       <p>
+//         Money Heist is a Spanish heist crime drama television series created
+//         by Álex Pina. The series traces two long-prepared heists led by
+//         the Professor (Álvaro Morte).
+//       </p>
+//     </div>
+//   );
+// };
 // export const App = () =>{
 //   return(
 //     <div>
@@ -120,34 +122,75 @@ const NetflixSeries = () => {
 //     </div>
 //   )
 // }
-export const App = ()=>{
+// export const App = ()=>{
+//   return(
+//     <div>
+//       <h1>MY NAME IS FARHAN KHAN</h1>
+//       <AppController
+//         AppName="Netflix"
+//         AppDescription="Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries, and more on thousands of internet-connected devices."
+//         AppStatus="Available"
+//       />
+//       <AppController
+//         AppName="Amazon Prime Video"
+//         AppDescription="Amazon Prime Video is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries, and more on thousands of internet-connected devices."
+//         AppStatus="Available"
+//       />
+//       <AppController
+//         AppName="Disney+"
+//         AppDescription="Disney+ is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries, and more on thousands of internet-connected devices."
+//         AppStatus="Available"
+//       />
+//     </div>
+//   )
+// }
+// const AppController = (props)=>{
+//   return(
+//     <div>
+//       <h2>{props.AppName}</h2>
+//       <h3>{props.AppDescription}</h3>
+//       <p>{props.AppStatus}</p>
+//     </div>
+//   )
+// }
+// const MovieCard =()=>{
+//   return(
+//     <div>
+//       <img src={image} height="200px" width="200px" />
+//       <h2>title</h2>
+//       <h3>rating</h3>
+//       <p>description</p>
+//       </div>
+//   )
+// }
+// export const App =()=>{
+//   return(
+//     <fragment>
+//       <MovieCard/>
+//       <MovieCard/>
+//       <MovieCard/>
+//     </fragment>
+//   )
+// }
+export const App = () => {
+  return (
+    <div>
+      <NetflixSeries />
+    </div>
+  );
+};
+export const NetflixSeries = ()=>{
+  const title = "Money Heist";
+  const rating = "4.5/5";
+  const description = "Money Heist is a Spanish heist cor (Álvaro Morte).";
+  const age = 19;
   return(
     <div>
-      <h1>MY NAME IS FARHAN KHAN</h1>
-      <AppController
-        AppName="Netflix"
-        AppDescription="Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries, and more on thousands of internet-connected devices."
-        AppStatus="Available"
-      />
-      <AppController
-        AppName="Amazon Prime Video"
-        AppDescription="Amazon Prime Video is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries, and more on thousands of internet-connected devices."
-        AppStatus="Available"
-      />
-      <AppController
-        AppName="Disney+"
-        AppDescription="Disney+ is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries, and more on thousands of internet-connected devices."
-        AppStatus="Available"
-      />
+      <img src={image} height="200px" width="200px" />
+      <h1>{title}</h1>
+      <h3>rating:{rating}</h3>
+      <p>description:{description}</p>
+      <button> { age >= 18 ? "Available" : "Not Available"}</button>
     </div>
-  )
-}
-const AppController = (props)=>{
-  return(
-    <div>
-      <h2>{props.AppName}</h2>
-      <h3>{props.AppDescription}</h3>
-      <p>{props.AppStatus}</p>
-    </div>
-  )
+  ) 
 }
