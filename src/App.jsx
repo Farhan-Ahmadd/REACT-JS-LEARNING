@@ -172,25 +172,40 @@ import image from "./assets/image.png";
 //     </fragment>
 //   )
 // }
-export const App = () => {
-  return (
-    <div>
-      <NetflixSeries />
-    </div>
-  );
-};
-export const NetflixSeries = ()=>{
+// export const App = () => {
+//   return (
+//     <div>
+//       <NetflixSeries />
+//     </div>
+//   );
+// };
+// export const NetflixSeries = ()=>{
+//   const title = "Money Heist";
+//   const rating = "4.5/5";
+//   const description = "Money Heist is a Spanish heist cor (Álvaro Morte).";
+//   const age = 19;
+//   return(
+//     <div>
+//       <img src={image} height="200px" width="200px" />
+//       <h1>{title}</h1>
+//       <h3>rating:{rating}</h3>
+//       <p>description:{description}</p>
+//       <button> { age >= 18 ? "Available" : "Not Available"}</button>
+//     </div>
+//   ) 
+// }
+export const App =()=>{
   const title = "Money Heist";
   const rating = "4.5/5";
-  const description = "Money Heist is a Spanish heist cor (Álvaro Morte).";
-  const age = 19;
+  const description = "Money Heist is a Spanish heist cor (Álvaro Morte).";   
+  const age = 16;
   return(
     <div>
       <img src={image} height="200px" width="200px" />
       <h1>{title}</h1>
       <h3>rating:{rating}</h3>
       <p>description:{description}</p>
-      <button> { age >= 18 ? "Available" : "Not Available"}</button>
+      <button> { age>=18 ? "Available" : "Not Available" }</button>
+      
     </div>
-  ) 
-}
+  )}
