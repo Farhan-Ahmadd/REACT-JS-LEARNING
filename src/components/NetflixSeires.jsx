@@ -1,37 +1,61 @@
-import image from "../assets/image.png";
+import seriesData from "../api/serisData.json";
 
- const Net = () => {
-  const name = "Money Heist";
-  const rating = "4.5/5";
-
+const NetflixSeries = () => {
   return (
+    <ul>
+      <li>
     <div>
-      <img src={image} height="200px" width="200px" />
+      <img src={seriesData[0].imag_url }/>
 
-      <h2>Name: {name}</h2>
-      <h2>Rating: {rating}</h2>
+      <h2>Name: {seriesData[0].name}</h2>
 
-      <p>
-        Money Heist is a Spanish heist crime drama television series created
-        by Álex Pina.
-      </p>
+      <h2>Rating: {seriesData[0].rating}</h2>
+
+      <p>Description: {seriesData[0].description}</p>
+
+      <p>Genre: {seriesData[0].genre.join(", ")}</p>
+
+      <a href={seriesData[0].watch_url} target="_blank">
+        <button>Watch Now</button>
+      </a>
     </div>
+    </li>
+      <li>
+    <div>
+      <img src={seriesData[1].imag_url }width="40%" />
+
+      <h2>Name: {seriesData[1].name}</h2>
+
+      <h2>Rating: {seriesData[1].rating}</h2>
+
+      <p>Description: {seriesData[1].description}</p>
+
+      <p>Genre: {seriesData[1].genre.join(", ")}</p>
+
+      <a href={seriesData[1].watch_url} target="_blank">
+        <button>Watch Now</button>
+      </a>
+    </div>
+    </li>
+      <li>
+    <div>
+      <img src={seriesData[2].imag_url }width="40%"/>
+
+      <h2>Name: {seriesData[2].name}</h2>
+
+      <h2>Rating: {seriesData[2].rating}</h2>
+
+      <p>Description: {seriesData[2].description}</p>
+
+      <p>Genre: {seriesData[2].genre.join(", ")}</p>
+
+      <a href={seriesData[2].watch_url} target="_blank">
+        <button>Watch Now</button>
+      </a>
+    </div>
+    </li>
+    </ul>
   );
 };
 
-export default Net;
-export const Footer =()=>{
-    return(
-        <div>
-            <h1> helllo </h1>
-        </div>
-    )
-}
-
-export const Pro = ()=>{
-    return (
-        <>
-        <h3>jnnjjnkn</h3>
-        </>
-    )
-}
+export default NetflixSeries;

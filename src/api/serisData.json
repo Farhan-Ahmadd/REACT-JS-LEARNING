@@ -1,0 +1,30 @@
+[
+  {
+    "name": "Lovely Runner",
+    "id": "Lovely-Runner",
+    "imag_url":"../../public/1.jpg",
+    "rating": "5.5",
+    "description": "Im Sol travels back in time to save her favorite celebrity.",
+    "genre": ["Romantic comedy", "Fantasy"],
+    "watch_url": "https://www.netflix.com/in/title/81914565"
+    
+  },
+  {
+    "name": "Queen of Tears",
+    "id": "Queen-of-Tears",
+    "imag_url":"../../public/2.jpg",
+    "rating": "4.8",
+    "description": "A married couple faces challenges while trying to save their relationship.",
+    "genre": ["Romance", "Drama"],
+    "watch_url": "https://www.netflix.com/in/title/81707950"
+  },
+  {
+    "name": "Business Proposal",
+    "id": "Business-Proposal",
+    "imag_url":"../../public/3.jpg",
+    "rating": "4.7",
+    "description": "A woman goes on a blind date pretending to be her friend and unexpectedly meets her CEO.",
+    "genre": ["Romantic comedy", "Drama"],
+    "watch_url": "https://www.netflix.com/in/title/81509440"
+  }
+]
