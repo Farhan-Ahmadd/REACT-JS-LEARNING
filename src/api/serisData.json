@@ -26,5 +26,15 @@
     "description": "A woman goes on a blind date pretending to be her friend and unexpectedly meets her CEO.",
     "genre": ["Romantic comedy", "Drama"],
     "watch_url": "https://www.netflix.com/in/title/81509440"
-  }
+  },
+   {
+    "name": "Mirzapur",
+    "id": "Mirzapur the movie",
+    "imag_url":"../../public/1.jpg",
+    "rating": "5.5",
+    "description": "Im Sol travels back in time to save her favorite celebrity.",
+    "genre": ["Romantic comedy", "Fantasy"],
+    "watch_url": "https://www.netflix.com/in/title/81914565"
+    
+   }
 ]
