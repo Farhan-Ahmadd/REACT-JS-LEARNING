@@ -1,10 +1,11 @@
-export const SeriesCard = (props) => {
+export const SeriesCard = ({data}) => {
+  const { id , imag_url , name , rating , description , genre , watch_url}=data;
   return (
     <li>
       <div>
         <img
-          src={props.curElem.imag_url}
-          alt={props.curElem.name}
+          src={imag_url}
+          alt={name}
           style={{
             width: "300px",
             height: "400px",
@@ -12,15 +13,15 @@ export const SeriesCard = (props) => {
           }}
         />
 
-        <h2>Name: {props.curElem.name}</h2>
+        <h2>Name: {name}</h2>
 
-        <h2>Rating: {props.curElem.rating}</h2>
+        <h2>Rating: {rating}</h2>
 
-        <p>Description: {props.curElem.description}</p>
+        <p>Description: {description}</p>
 
-        <p>Genre: {props.curElem.genre.join(", ")}</p>
+        <p>Genre: {genre.join(", ")}</p>
 
-        <a href={props.curElem.watch_url} target="_blank">
+        <a href={watch_url} target="_blank">
           <button>Watch Now</button>
         </a>
       </div>

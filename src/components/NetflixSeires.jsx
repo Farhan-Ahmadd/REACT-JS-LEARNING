@@ -8,7 +8,7 @@ const NetflixSeries = () => {
         return (
           <SeriesCard
             key={curElem.id}
-            curElem={curElem}
+            data={curElem}
           />
         );
       })}
