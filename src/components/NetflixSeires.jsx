@@ -1,19 +1,19 @@
-// import seriesData from "../api/serisData.json";
-// import { SeriesCard } from "./SeriesCard";
+import seriesData from "../api/serisData.json";
+import { SeriesCard } from "./SeriesCard";
 
-// const NetflixSeries = () => {
-//   return (
-//     <ul>
-//       {seriesData.map((curElem) => {
-//         return (
-//           <SeriesCard
-//             key={curElem.id}
-//             data={curElem}
-//           />
-//         );
-//       })}
-//     </ul>
-//   );
-// };
+const NetflixSeries = () => {
+  return (
+    <ul>
+      {seriesData.map((curElem) => {
+        return (
+          <SeriesCard
+            key={curElem.id}
+            data={curElem}
+          />
+        );
+      })}
+    </ul>
+  );
+};
 
-// export default NetflixSeries;
+export default NetflixSeries;
