@@ -4,11 +4,12 @@ import './index.css'
 import { App }   from './App.jsx'
 // import NetflixSeries from './component/NetflixSeries.jsx'
 // import { Practices } from './practices.jsx'
-
+// import { Profile } from './profile.jsx'
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <App />
     {/* <NetflixSeries/>   */}
     {/* <Practices/> */}
+    
   </StrictMode>,
 )

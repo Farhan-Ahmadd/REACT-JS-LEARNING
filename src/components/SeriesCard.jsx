@@ -1,5 +1,5 @@
 export const SeriesCard = ({data}) => {
-  const {  imag_url , name , rating , description , genre , watch_url}=data;
+  const {  id ,imag_url , name , rating , description , genre , watch_url}=data;
   return (
     <li>
       <div>
