@@ -45,5 +45,14 @@
     "description": "Two young men from different backgrounds fall in love with the same woman.",
     "genre": ["Action", "Drama"],
     "watch_url": "https://www.netflix.com/in/title/81707950"
+  },
+  {
+    "name": "bheeshma",
+    "id": "bheeshma",
+    "imag_url":"../../public/3.jpg",
+    "rating": "4.7",
+    "description": "Two young men from different backgrounds fall in love with the same woman.",
+    "genre": ["Action", "Drama"],
+    "watch_url": "https://www.netflix.com/in/title/81707950"
   }
 ]
